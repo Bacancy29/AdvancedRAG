@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rag.Core\Rag.Core.csproj" />
+    <ProjectReference Include="..\Rag.Ingestion\Rag.Ingestion.csproj" />
+    <ProjectReference Include="..\Rag.Retrieval\Rag.Retrieval.csproj" />
+    <ProjectReference Include="..\Rag.Generation\Rag.Generation.csproj" />
+    <ProjectReference Include="..\Rag.Data\Rag.Data.csproj" />
+    <ProjectReference Include="..\Rag.Hosting\Rag.Hosting.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.13" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>advanced-rag</UserSecretsId>
+  </PropertyGroup>
+
+</Project>

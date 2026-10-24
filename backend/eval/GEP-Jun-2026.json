@@ -1,0 +1,121 @@
+{
+  "document": "Global Economic Prospects, June 2026",
+  "questions": [
+    {
+      "id": "R1", "required": true, "category": "Region (routing)",
+      "question": "What is the growth outlook for South Asia in this report?",
+      "expected": "Growth in SAR is expected to soften to 6.3 percent in 2026 (conflict in the Middle East: energy prices, remittances, tourism)",
+      "expectedSection": "South Asia",
+      "mustContain": [["6.3"]],
+      "mustNotContain": ["Sub-Saharan", "East Asia", "Latin America"],
+      "evidence": ["Growth in SAR is expected to soften to 6.3"]
+    },
+    {
+      "id": "R2", "required": true, "category": "Chapter (routing)",
+      "question": "What does Chapter 3 say about sovereign debt in developing economies?",
+      "expected": "Rising government debt raises interest rates: spreads and yields up about 110 and 30 basis points since 2010; non-linear (bigger effect at higher debt)",
+      "expectedSection": "Chapter 3",
+      "mustContain": [["interest rate", "spread", "yield", "borrowing cost"], ["debt"]],
+      "mustNotContain": ["commodity exporters"],
+      "evidence": ["110 and 30 basis points", "debt levels are positively associated"]
+    },
+    {
+      "id": "R3", "required": true, "category": "Executive summary (routing)",
+      "question": "According to the executive summary, what are the main risks to the global outlook?",
+      "expected": "Risks skewed to the downside: renewed escalation of hostilities / prolonged commodity disruptions raising prices, inflation, food insecurity, financial stress",
+      "expectedSection": "Executive Summary",
+      "mustContain": [["downside"], ["hostilities", "escalation", "conflict"], ["commodity", "energy", "financial stress"]],
+      "evidence": ["Risks to the outlook remain skewed to the downside"]
+    },
+    {
+      "id": "Q4", "category": "Region mix-up check",
+      "question": "What growth rate is projected for East Asia and Pacific in 2026?",
+      "expected": "4.2 percent in 2026 (from 5 percent in 2025)",
+      "expectedSection": "East Asia and Pacific",
+      "mustContain": [["4.2"]],
+      "mustNotContain": ["6.3", "South Asia", "Sub-Saharan"],
+      "evidence": ["Growth in EAP is projected to moderate to 4.2"]
+    },
+    {
+      "id": "Q5", "category": "Region mix-up check",
+      "question": "What is the 2026 growth forecast for Sub-Saharan Africa?",
+      "expected": "Edges down to 4 percent in 2026, recovering to 4.4 percent on average in 2027–28",
+      "expectedSection": "Sub-Saharan Africa",
+      "mustContain": [["4 percent", "4.0 percent"]],
+      "mustNotContain": ["6.3", "4.2 percent", "East Asia"],
+      "evidence": ["Growth in SSA is forecast to edge down to 4 percent"]
+    },
+    {
+      "id": "Q6", "category": "Region mix-up check",
+      "question": "How fast is Latin America and the Caribbean expected to grow in 2026?",
+      "expected": "2.2 percent in 2026, strengthening to an average of 2.5 percent over 2027–28",
+      "expectedSection": "Latin America and the Caribbean",
+      "mustContain": [["2.2"]],
+      "mustNotContain": ["2.1 percent", "Europe and Central Asia"],
+      "evidence": ["Growth in LAC is projected to slow to 2.2"]
+    },
+    {
+      "id": "Q7", "category": "Region mix-up check",
+      "question": "What is the growth projection for Europe and Central Asia in 2026?",
+      "expected": "2.1 percent in 2026, picking up to 2.4 percent by 2027–28",
+      "expectedSection": "Europe and Central Asia",
+      "mustContain": [["2.1"]],
+      "mustNotContain": ["2.2 percent", "Latin America"],
+      "evidence": ["Growth in ECA is projected to decelerate further, to 2.1"]
+    },
+    {
+      "id": "Q8", "category": "Region (alias routing)",
+      "question": "What is the 2026 growth forecast for the Middle East and North Africa region?",
+      "expected": "1.6 percent in 2026 (from 4 percent in 2025), excluding the Islamic Republic of Iran",
+      "expectedSection": "Middle East, North Africa, Afghanistan, and Pakistan",
+      "mustContain": [["1.6"]],
+      "evidence": ["growth in MNA is expected to weaken to 1.6"]
+    },
+    {
+      "id": "Q9", "category": "Chapter 1 fact",
+      "question": "What is the global growth forecast for 2026?",
+      "expected": "2.5 percent in 2026, down from 2.9 percent in 2025",
+      "mustContain": [["2.5"]],
+      "evidence": ["global growth is forecast to decelerate to 2.5 percent in 2026", "projected to slow from 2.9 percent in 2025 to 2.5 percent in 2026"]
+    },
+    {
+      "id": "Q10", "category": "Chapter detail",
+      "question": "According to Chapter 3, how does the effect of higher debt on sovereign spreads change as debt rises?",
+      "expected": "Non-linear: at ~45% of GDP a 1 pp rise adds ~8 bp to spreads; at ~80% it adds ~26 bp",
+      "expectedSection": "Chapter 3",
+      "mustContain": [["8 basis point", "8 bp"], ["26"]],
+      "evidence": ["8 basis point rise in sovereign spreads"]
+    },
+    {
+      "id": "Q11", "category": "Boxed article",
+      "question": "In Box 3.1, what happened in Mozambique's tuna bond episode?",
+      "expected": "Revelation of about 9 percent of GDP in previously undisclosed borrowing (2009–14), with a substantial rise in borrowing costs",
+      "expectedSection": "BOX 3.1",
+      "mustContain": [["9 percent"]],
+      "evidence": ["tuna bond"]
+    },
+    {
+      "id": "Q12", "category": "Chapter (routing)",
+      "question": "What does Chapter 4 find about fiscal policy in commodity exporters?",
+      "expected": "More volatile and more procyclical than in other EMDEs, amplifying business cycles and dampening growth",
+      "expectedSection": "Chapter 4",
+      "mustContain": [["procyclical"], ["volatil"]],
+      "evidence": ["more volatile and more procyclical"]
+    },
+    {
+      "id": "T1", "trap": true, "category": "Trap: year not covered",
+      "question": "What is the growth forecast for South Asia in 2035?",
+      "expected": "Refusal: forecasts only run to 2028"
+    },
+    {
+      "id": "T2", "trap": true, "category": "Trap: chapter does not exist",
+      "question": "What does Chapter 6 say about climate finance?",
+      "expected": "Refusal: the report has four chapters"
+    },
+    {
+      "id": "T3", "trap": true, "category": "Trap: off-topic",
+      "question": "What is the capital of France?",
+      "expected": "Refusal"
+    }
+  ]
+}

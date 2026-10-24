@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rag.Core\Rag.Core.csproj" />
+    <ProjectReference Include="..\Rag.Ingestion\Rag.Ingestion.csproj" />
+    <ProjectReference Include="..\Rag.Retrieval\Rag.Retrieval.csproj" />
+    <ProjectReference Include="..\Rag.Generation\Rag.Generation.csproj" />
+    <ProjectReference Include="..\Rag.Data\Rag.Data.csproj" />
+    <ProjectReference Include="..\Rag.Hosting\Rag.Hosting.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>advanced-rag</UserSecretsId>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>

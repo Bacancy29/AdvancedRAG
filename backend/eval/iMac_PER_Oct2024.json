@@ -1,0 +1,92 @@
+{
+  "document": "Apple iMac Product Environmental Report (October 2024)",
+  "questions": [
+    {
+      "id": "T1", "required": true, "category": "Table",
+      "question": "What is the total carbon footprint of iMac, and how is it split across production, transportation, product use and end-of-life processing?",
+      "expected": "346 kg CO2e: production 50%, transportation 5%, product use 45%, end-of-life <1%",
+      "expectedSection": "Carbon Footprint",
+      "mustContain": [["346"], ["50"], ["45"]],
+      "evidence": ["| • Product use | 45% |"]
+    },
+    {
+      "id": "T2", "category": "Table",
+      "question": "How much power does iMac use in sleep mode at 115V?",
+      "expected": "0.57W",
+      "mustContain": [["0.57"]],
+      "evidence": ["| Sleep | 0.56W | 0.57W | 0.59W |"]
+    },
+    {
+      "id": "T3", "category": "Table",
+      "question": "What is the power adapter efficiency of iMac at 230V?",
+      "expected": "91.9%",
+      "mustContain": [["91.9"]],
+      "evidence": ["| Power adapter efficiency | 91.1% | 91.5% | 91.9% |"]
+    },
+    {
+      "id": "T4", "category": "Table",
+      "question": "What are the iMac's scope 2 emissions from utility-purchased electricity?",
+      "expected": "0 kg CO2e",
+      "expectedSection": "Carbon Footprint",
+      "mustContain": [["0 kg"]],
+      "evidence": ["(scope 2) | 0 kg CO2e"]
+    },
+    {
+      "id": "C1", "required": true, "category": "Chart (vision)",
+      "question": "What were the baseline emissions for iMac before Apple's reductions, and by how much were emissions reduced?",
+      "expected": "Baseline 445 kg; reductions of 99 kg, resulting in 346 kg (waterfall chart on page 2)",
+      "mustContain": [["445"], ["99"]],
+      "evidence": ["445"]
+    },
+    {
+      "id": "F1", "required": true, "category": "Footnote",
+      "question": "What assumptions is the claim that iMac emissions were reduced by more than 20 percent measured against?",
+      "expected": "Footnote 7: a business-as-usual scenario with no clean electricity beyond the grid, 2015 carbon intensity of key materials, and the FY2017–19 transport mix",
+      "mustContain": [["2015"], ["clean electricity", "grid"]],
+      "evidence": ["Footnote 7: Carbon reductions are calculated against"]
+    },
+    {
+      "id": "F2", "category": "Footnote",
+      "question": "What is excluded from Apple's calculations of plastic content and packaging weight?",
+      "expected": "Adhesives, inks, and coatings",
+      "mustContain": [["adhesives"], ["inks"]],
+      "evidence": ["Adhesives, inks, and coatings are excluded"]
+    },
+    {
+      "id": "Q1", "category": "Text",
+      "question": "How much less energy does iMac use than the ENERGY STAR requirement?",
+      "expected": "58 percent less",
+      "mustContain": [["58"]],
+      "evidence": ["58 percent less energy"]
+    },
+    {
+      "id": "Q2", "category": "Text / stat",
+      "question": "How much recycled content does the iMac packaging contain?",
+      "expected": "76 percent recycled content (packaging is 100 percent fiber-based)",
+      "mustContain": [["76"]],
+      "evidence": ["76 percent recycled content"]
+    },
+    {
+      "id": "Q3", "category": "Text / callout",
+      "question": "How are recycled rare earth elements used in iMac?",
+      "expected": "100 percent recycled rare earth elements in all magnets, 99 percent of the total rare earth elements in the device",
+      "mustContain": [["100"], ["magnet"]],
+      "evidence": ["recycled rare earth elements in all magnets"]
+    },
+    {
+      "id": "X1", "trap": true, "category": "Trap: other product",
+      "question": "What is the carbon footprint of the MacBook Air?",
+      "expected": "Refusal: the report covers iMac only"
+    },
+    {
+      "id": "X2", "trap": true, "category": "Trap: not in document",
+      "question": "What is the retail price of the iMac in the United States?",
+      "expected": "Refusal"
+    },
+    {
+      "id": "X3", "trap": true, "category": "Trap: off-topic",
+      "question": "What is the capital of France?",
+      "expected": "Refusal"
+    }
+  ]
+}

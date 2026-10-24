@@ -1,0 +1,97 @@
+{
+  "document": "GPO 2018 Annual Report",
+  "questions": [
+    {
+      "id": "R1", "required": true, "category": "Narrative fact",
+      "question": "How many depository libraries did GPO staff visit in FY 2018?",
+      "expected": "166 depository libraries (in 25 states)",
+      "mustContain": [["166"]],
+      "evidence": ["visited 166 depository libraries"]
+    },
+    {
+      "id": "R2", "required": true, "category": "Narrative fact, two parts",
+      "question": "What new digital system replaced FDsys, and when was it fully deployed?",
+      "expected": "govinfo; its full-scale deployment happened during FY 2018 (FDsys was retired and replaced by govinfo in December 2018)",
+      "mustContain": [["govinfo"], ["FY 2018", "December 2018"]],
+      "evidence": ["replaced by govinfo in December 2018", "retired in December 2018", "replace FDsys in December 2018"]
+    },
+    {
+      "id": "R3", "required": true, "category": "Narrative fact (amount)",
+      "question": "How much did GPO procure in printing and information products in FY 2018 on behalf of federal agencies?",
+      "expected": "More than $375 million",
+      "mustContain": [["$375 million", "$375.7 million", "375 million"]],
+      "evidence": ["procured more than $375 million"]
+    },
+    {
+      "id": "Q4", "category": "Narrative fact (two numbers)",
+      "question": "How many copies and titles did GPO distribute to depository libraries in FY 2018?",
+      "expected": "802,834 copies of 4,211 titles",
+      "mustContain": [["802,834"], ["4,211"]],
+      "evidence": ["802,834 copies of 4,211 titles"]
+    },
+    {
+      "id": "Q5", "category": "Narrative fact",
+      "question": "How many participants did the FDLP Academy programs serve in FY 2018?",
+      "expected": "More than 10,000 participants",
+      "mustContain": [["10,000"]],
+      "evidence": ["served more than 10,000 participants"]
+    },
+    {
+      "id": "Q6", "category": "Narrative fact",
+      "question": "How many additional Preservation Steward agreements did GPO sign?",
+      "expected": "20 additional agreements",
+      "mustContain": [["20"]],
+      "evidence": ["20 additional Preservation Steward agreements"]
+    },
+    {
+      "id": "Q7", "category": "Narrative fact",
+      "question": "How many specific orders did GPO's procured printing work consist of in FY 2018?",
+      "expected": "More than 84,000 orders",
+      "mustContain": [["84,000", "84,111"]],
+      "evidence": ["more than 84,000 specific orders", "Jobs procured nationwide: 84,111"]
+    },
+    {
+      "id": "Q8", "category": "Narrative fact",
+      "question": "What new press did GPO put into operation in FY 2018?",
+      "expected": "A state-of-the-art LED UV 8-Color Perfector Press",
+      "mustContain": [["LED UV"], ["Perfector"]],
+      "evidence": ["LED UV 8-Color Perfector Press"]
+    },
+    {
+      "id": "Q9", "category": "Narrative fact",
+      "question": "What certification was the govinfo development team working to secure?",
+      "expected": "Certification as a Trustworthy Digital Repository",
+      "mustContain": [["Trustworthy Digital Repository"]],
+      "evidence": ["Trustworthy Digital Repository"]
+    },
+    {
+      "id": "Q10", "category": "Stat panel (label/value layout)",
+      "question": "How many passports did GPO produce in FY 2018?",
+      "expected": "15,901,600 (the narrative rounds it to 16 million)",
+      "mustContain": [["15,901,600", "16 million"]],
+      "evidence": ["15,901,600"]
+    },
+    {
+      "id": "Q11", "category": "Stat panel (label/value layout)",
+      "question": "How many tangible copies were distributed to depository libraries according to GPO By the Numbers?",
+      "expected": "802,834",
+      "mustContain": [["802,834"]],
+      "evidence": ["802,834"]
+    },
+    {
+      "id": "T1", "trap": true, "category": "Trap: wrong year",
+      "question": "How many depository libraries did GPO staff visit in FY 2020?",
+      "expected": "Refusal: the report covers FY 2018"
+    },
+    {
+      "id": "T2", "trap": true, "category": "Trap: not in document",
+      "question": "Who was appointed GPO Director in 2021?",
+      "expected": "Refusal"
+    },
+    {
+      "id": "T3", "trap": true, "category": "Trap: off-topic",
+      "question": "What is the capital of Australia?",
+      "expected": "Refusal"
+    }
+  ]
+}
